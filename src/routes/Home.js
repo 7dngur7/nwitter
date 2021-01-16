@@ -53,9 +53,9 @@ useEffect(() => {
         const reader = new FileReader();
         reader.onloadend = (finishedEvent) => {
           const{
-            currentTarget: {resault},
+            currentTarget: {result},
           } = finishedEvent;
-          setAttachment(resault);
+          setAttachment(result);
         };
         reader.readAsDataURL(theFile);
       };

@@ -5,7 +5,7 @@ import Home from "../routes/Home";
 import Profile from "routes/Profile";
 import Navigation from "./Navigation";
 
-const AppRouter = ({isLoggedIn}, userObj) => {
+const AppRouter = ({isLoggedIn, userObj}) => {
 return(
 <Router>
     {isLoggedIn && <Navigation />}
